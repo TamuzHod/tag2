@@ -1,0 +1,93 @@
+h1{margin-top: 0px;}
+body{margin:3px;}
+
+#topScores{
+	border: 1px solid black;
+	width: 200px; 
+	height: 560px; 
+	margin-left: auto ; 
+	margin-right: auto; 
+	position: absolute;
+}
+
+#headerScores{
+	height: 60px; 
+	background: white;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: inherit;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;			
+}
+
+.list{
+	margin-top: 30px;
+	margin-left: 0px;
+	font-size: 100%;
+	
+}
+
+#wrapper{
+	border: 1px solid black;
+	width: 600px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	position: relative;
+	min-height: 99%;
+}
+
+#header{
+	height: 60px; 
+	background: white;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: inherit;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;			
+}
+
+#gameBored{
+	height: 500px; /* Play around with the hieght and see if foot sticks to bottom at all times */
+	background: red; 
+	width: inherit;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: 10;
+	overflow: hidden;
+}
+
+#platform{
+	height: 10px; /* Play around with the hieght and see if foot sticks to bottom at all times */
+	background: black; 
+	width: 50px;
+	margin-top: 490px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.rock {
+	height: 10px;
+	background: blue; 
+	width: 10px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.information {
+	font-size: 150%;
+	margin: 1px;
+}
+
+
+#footer{
+	height: 50px; 
+	background: blue;
+	position: absolute; 
+	bottom: 3;
+	width: inherit;
+	text-align: center;
+}

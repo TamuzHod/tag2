@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Tamuz's projrcts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap css -->
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<!-- Theme css -->
+	<link href="css/colorfrog.css" rel="stylesheet" media="screen">   
+	
+	<!--  game css -->
+	<link rel="stylesheet" href="../game1/style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script src="js/respond.min.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>	
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/colorfrog.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>google.maps.event.addDomListener(window, 'load', initialize);</script>
+	
+	<!-- game js -->
+	<script src="../game1/game.js"></script>
+	<script src="../game1/connector.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');
+	</script>
+	<![endif]-->
+	
+</head>
+<body id="body" onLoad="init();">
+<!--
+Use the corresponding body tag for your chosen theme
+<body class="blue">
+<body class="orange">
+<body class="green">
+<body class="bw">
+-->
+
+	<div class="container">
+		<header>
+			<a class="current brand" href="index.html">Colorfrog</a>
+		</header>
+		
+		<button class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		
+		<nav class="navbar-collapse collapse">
+			<ul class="nav nav-pills">
+				<li class="current active"><a class='current' href="index.html">Home</a></li>
+				<li><a href="styles.html">Styles</a></li>
+				<li><a href="templates.html">Templates</a></li>
+				<li><a href="support.html">Support</a></li>              
+			</ul>
+		</nav>
+	</div> <!-- //end container -->	
+	
+			<div id="topScores">
+			<div id="headerScore">
+				<b class="information" >Top Scores</b>
+			</div>
+			<ol>
+ 				<li id="0" class="list"></li>
+ 				<li id="1" class="list"></li>
+				<li id="2" class="list"></li>
+ 				<li id="3" class="list"></li>
+				<li id="4" class="list"></li>
+ 				<li id="5" class="list"></li>
+ 				<li id="6" class="list"></li>
+ 				<li id="7" class="list"></li>
+ 				<li id="8" class="list"></li>
+ 				<li id="9" class="list"></li>
+			</ol> 
+		</div>
+		<div id="wrapper">
+			<div id="header">
+				<div> <b id="lifeH" class="information" >Life : </b><b id="life" class="information">10</b> </div> 
+				<div><b id="scoreH" class="information" >Score : </b><b id="score" class="information">0</b> </div>
+				<br>
+				<button id="endOfGame" style="display: none;" >Press To Play</button>
+				
+			</div>
+	
+			<div id="gameBored">
+			
+				<div id="platform" style="margin-left: 275px;"></div>
+				
+			</div>
+		
+			<div id="footer">
+				<img id="img" src="../game1/assets/arrow27.gif" style="position:fixed ;width:300px;height:60px;left:50px;top:580px"/>
+				<button id="pause">play</button>
+				<button id="easy">easy</button>
+				<button id="nourmal">nourmal</button>
+				<button id="hard">hard</button>
+				<div style="clear: both"></div>
+			</div>
+			
+			<div style="clear: both;"></div>
+		</div>
+
+	<div class="container content underHero">
+
+	</div> <!-- //end container -->	
+	
+		<div id="map">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-4 alt">
+							<div class="background-inner">
+								<h3>Subscribe</h3>
+								<p>To our newsletter to keep up to date with news and events from Colorfrog</p>
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="your email address" />				
+									<div class="input-group-btn">			  
+										<button class="btn" type="button"><span class="glyphicon glyphicon-chevron-right"></span></button>
+									</div>
+								</div>
+								<small class="clearfix">We don't send out newsletters often, so no worrying about spam. Also, we never share your email address with anyone.</small>
+							</div>
+						</div>
+						<div class="col-sm-4 col-sm-offset-4 alt">
+							<div class="background-inner">
+								<h3>Connect</h3>
+								<ul class="contact-info">
+									<li class="contact-info-address">Some Street 30, 00000, Country</li>
+									<li class="contact-info-call">+0102345678</li>
+									<li class="contact-info-mail"><a href="mailto:">info@colorfrog.com</a></li>
+								</ul>
+								<ul class="social-info">
+									<li>
+										<a href="" class="social-info-twitter">Twitter</a>
+									</li>	
+									<li>
+										<a href="" class="social-info-facebook">Facebook</a>
+									</li>
+									<li>
+										<a href="" class="social-info-pintrest">Pintrest</a>
+									</li>
+									<li>
+										<a href="" class="social-info-github">Github</a>
+									</li>					
+									<li>
+										<a href="" class="social-info-linkedin">LinkedIn</a>
+									</li>
+								</ul>																															
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- //end container -->
+		<div id="footer-map"></div>
+	</div> <!-- //end map -->
+			
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Copyright &copy; 2015 Colorfrog. All rights reserved. <a href="">Terms</a> &amp; <a href="">Privacy</a>.</p>		
+				</div>
+				<div class="col-sm-6">
+					<p class="text-right">
+					Style: <a href="" class="st" id="style-bw">Black & White</a>, <a href="" class="st" id="style-orange">Orange</a>, <a href="" class="st" id="style-green">Green</a>, <a href="" class="st" id="style-blue">Blue</a>
+					</p>
+				</div>
+			</div>
+		</div>   <!--//end container -->   
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body id="body" onLoad="init();">
+	
+		<div id="topScores">
+			<div id="headerScore">
+				<b class="information" >Top Scores</b>
+			</div>
+			<ol>
+ 				<li id="0" class="list"></li>
+ 				<li id="1" class="list"></li>
+				<li id="2" class="list"></li>
+ 				<li id="3" class="list"></li>
+				<li id="4" class="list"></li>
+ 				<li id="5" class="list"></li>
+ 				<li id="6" class="list"></li>
+ 				<li id="7" class="list"></li>
+ 				<li id="8" class="list"></li>
+ 				<li id="9" class="list"></li>
+			</ol> 
+		</div>
+		<div id="wrapper">
+			<div id="header">
+				<div> <b id="lifeH" class="information" >Life : </b><b id="life" class="information">10</b> </div> 
+				<div><b id="scoreH" class="information" >Score : </b><b id="score" class="information">0</b> </div>
+				<br>
+				<button id="endOfGame" style="display: none;" >Press To Play</button>
+				
+			</div>
+	
+			<div id="gameBored">
+			
+				<div id="platform" style="margin-left: 275px;"></div>
+				
+			</div>
+		
+			<div id="footer">
+				<img id="img" src="assets/arrow27.gif" style="position:fixed ;width:300px;height:60px;left:50px;top:580px"/>
+				<button id="pause">play</button>
+				<button id="easy">easy</button>
+				<button id="nourmal">nourmal</button>
+				<button id="hard">hard</button>
+				<div style="clear: both"></div>
+			</div>
+			
+			<div style="clear: both;"></div>
+		</div>
+		
+		
+	</body>
+	
+	<script src="game.js"></script>
+	<script src="connector.js"></script>
+
+</html>

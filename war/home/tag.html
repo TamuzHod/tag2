@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>Tag Game</title>
+	
+	
+	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
+	
+	<style>
+	html, body, #map-canvas {
+		height: 100%;
+		margin: 0px;
+		padding: 0px
+	}
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+	<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+	<script type="text/javascript" src="../tag/connector.js"></script>
+	<script type="text/javascript" src="../tag/controller.js"></script>
+	<script type="text/javascript" src="../tag/location.js"></script>
+	<!--script type="text/javascript" src="../tag/latlon.js"></script-->
+
+</head>
+<body>
+	
+	<p id="location"></p>
+	<p id="angle"></p>
+	<p id="action-result"></p>
+	<p id="channel-message"></p>	
+	<p id="players-list"></p>
+	
+	<audio id="gotShot" src="../tag/assets/Shotgun_Blast.mp3"></audio>
+	
+	<button type="button" onclick=handlePendingGames("action-result")>Show Pendings Games</button>
+	<button type="button" onclick=handleCreateGame("action-result")>Create Game</button>
+	<button type="button" onclick=handleJoinGame("action-result")>Join Game</button>
+	<button type="button" onclick=handleUpdateLocation()>update Location</button>
+	<button type="button" onclick=handleFire()>fire!</button>
+	<button type="button" onclick=handleSendMessage()>sendMassege!</button>
+	<div id="map-canvas"></div>
+</body>
+</html>
